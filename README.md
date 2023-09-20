@@ -1,0 +1,2 @@
+# astronomos
+Star tracker environment
