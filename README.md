@@ -1,2 +1,2 @@
-# astronomos
-Star tracker environment
+# digesto.py
+Substacks organization utility for astrophotography session images.
