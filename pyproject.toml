@@ -2,15 +2,14 @@
 requires = ['setuptools', 'setuptools-scm']
 build-backend = 'setuptools.build_meta'
 
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["astro"]
-namespaces = true
-
 [project]
 name = "digesto.py"
+authors = [
+    {name="Scott Barnett", email="thumdugger@gmail.com"}
+    , ]
 version = "2023.10.25"
 description = "Substacks organization utility for astrophotography session images."
+readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "GNU Affero General Public License v3"}
 classifiers=[
@@ -25,13 +24,8 @@ classifiers=[
 ]
 dependencies = [
     "click"
-    ,
-]
+    , ]
 
-optional_dependencies = [
-    "colorama"
-    ,
-]
 
 [project.scripts]
-digesto = "astro.digesto:digesto_cli"
+digesto = "astro.digesto.cli:digesto_cli"
